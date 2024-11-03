@@ -1,0 +1,23 @@
+.font-style-button-container {
+    padding-left: 5px;
+}
+
+.font-style-button {
+    position: relative;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+    background-color: white;
+    font-size: 14px;
+}
+
+.font-style-button:hover {
+    background-color: rgb(232, 232, 232)
+}
