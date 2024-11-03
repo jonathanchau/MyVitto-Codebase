@@ -1,0 +1,69 @@
+.profile-icon-container {
+    margin-left: auto; /* Move to the right side of the header */
+    margin-right: 2.5%; /* Add some spacing */
+    margin-top: -2.7%;
+    width: 1%;
+    height: auto;
+    position: relative;
+}
+
+/* Profile icon circle */
+.profile-icon-circle {
+    width: 300%;
+    height: 300%;
+    aspect-ratio: 50/50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-icon-dropdown-hide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.drop-down-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.profile-icon-dropdown-show {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15%;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    /* width: 400%;
+    height: 100%;
+    right: -150%;
+    bottom: -110%; */
+}
+
+.profile-settings {
+    display: flex;
+    text-decoration: none;
+    color: black;
+
+}
+
+.log-out-button {
+    display: flex;
+    border-style: none;
+    cursor: pointer;
+}
