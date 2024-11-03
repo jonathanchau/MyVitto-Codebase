@@ -1,0 +1,58 @@
+.side-bar-container {
+  position: absolute;
+  display: flex;
+  left: 0px;
+  top: 0px;
+}
+
+.side-bar {
+    position: relative;
+    left: -5px;
+    top: 115px;
+    overflow: hidden;
+    border: 2px solid black;
+    height: 680px;
+    transition: width ease 0.4s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(203, 242, 255);
+    border: 2px solid black;
+}
+
+.side-bar.expand {
+  width: 178.5px;
+}
+
+.side-bar.collapse {
+  width: 0px;
+}
+
+@media (max-width: 760px) {
+  .side-bar-container--size {
+    transform: scale(0.77);
+    left: -20.53px;
+    top: 30px;
+  }
+  .side-bar.collapse {
+    width: 20px;
+  }
+}
+
+.side-bar-button {
+  position: relative;
+  width: 17px;
+  height: 68px;
+  top: 446px;
+  left: -7px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  transition: left ease 0.4s;
+  background-color: rgb(179, 234, 253);
+  border: 3px solid black;
+  border-left: 5px solid transparent;
+}
+
+.buttons {
+  position: relative;
+  top: 0px;
+}
