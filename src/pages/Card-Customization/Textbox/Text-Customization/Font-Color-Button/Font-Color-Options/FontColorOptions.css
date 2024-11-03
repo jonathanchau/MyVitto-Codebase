@@ -1,0 +1,10 @@
+.color-options-container {
+    position: absolute;
+    left: 45px;
+    top: -124px;
+    width: 90px;
+    height: 120px;
+    border: 2px solid #000;
+    background-color: white;
+    border-radius:10px;
+}
