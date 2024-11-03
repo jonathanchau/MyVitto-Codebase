@@ -1,0 +1,23 @@
+.contact-information-output {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-information-output__label {
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 330px;
+    height: 35px;
+    left: 10px;
+    font-size: 25px;
+}
+
+.contact-information-output__icon {
+    position: relative;
+    border: 1px solid gray;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
