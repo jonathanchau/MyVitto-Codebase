@@ -1,0 +1,122 @@
+/*Font */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Josefin+Sans&display=swap');
+
+.ContactUsPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.ContactUsBackground {
+    z-index: 0;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.platformStyle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlaying divs */
+.ContactUsTitle {
+    /* width: 50%; */
+    top: 14%; /* Adjust the top value to center vertically */
+    left: 43%; /* Adjust the left value to center horizontally */
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    font-size: 200%;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+form {
+    display: block;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 2px;
+} */
+
+.ContactUsForm {
+    top: 15%; 
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center;  */
+}
+
+/* Add spacing between form elements */
+.ContactUsForm input,
+.ContactUsForm textarea {
+    margin-bottom: 5%;
+    box-shadow: 1px 0.5px;
+    height: 50px;
+    width: 300px;
+}
+/* Adjust the width of the form container */
+.ContactUsForm form {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.ContactUsForm label {
+    margin-bottom: 5%;
+}
+
+
+.ContactUsLogo {
+    width: 15%;
+    left: 45%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.ContactUsLogo {
+    width: 15%;
+    left: 45%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.waveStyle,
+.platformStyle {
+    width: 100%;
+    height: auto;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .summaryTextBox {
+    width: 40%;
+    margin-left: 10%;
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .summaryTextBox {
+    width: 40%;
+    margin-left: 10%;
+    font-size: 100%;
+  }
+}
