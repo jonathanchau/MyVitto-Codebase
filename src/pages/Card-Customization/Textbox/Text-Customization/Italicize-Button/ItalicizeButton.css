@@ -1,0 +1,26 @@
+.italicize-button-container {
+    padding-left: 5px;
+}
+
+.italicize-button {
+    position: relative;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    font-size: 14px;
+}
+
+.italicize-button:hover {
+    background-color: rgb(232, 232, 232)
+}
