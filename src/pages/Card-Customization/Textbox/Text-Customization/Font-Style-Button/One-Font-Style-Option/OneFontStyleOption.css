@@ -1,0 +1,15 @@
+.font-style-option {
+    position: absolute;
+    width: 148px;
+    height: 29px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.font-style-option:hover {
+    background-color: rgb(232, 232, 232)
+}
