@@ -1,0 +1,88 @@
+/* Dashboard container */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+/* Dashboard Header section */
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1%;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  border: 2px solid black;
+  padding: 0.5%;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+/* Divider line */
+.dashboard-divider {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+/* Dashboard Content section */
+.dashboard-content {
+  flex: 1;
+  padding: 1%;
+}
+
+/* Content title */
+.content-title {
+  /* style */
+  font-size: 300%;
+  font-weight: bold;
+  text-decoration: underline;
+  /* positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -2%;
+}
+
+/* Plus button */
+.plus-button {
+  position: fixed;
+  bottom: 5%; /* Adjust the vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4.2%;
+  height: 8.1%;
+  background-color: #007bff;
+  color: white;
+  font-size: 300%;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile icon container */
+.profile-icon-container {
+  margin-left: auto; /* Move to the right side of the header */
+  margin-right: 2.5%; /* Add some spacing */
+  margin-top: -2.7%;
+}
+
+/* Profile icon circle */
+.profile-icon-circle {
+  width: 400%;
+  height: 400%;
+  aspect-ratio: 50/50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 120%;
+  cursor: pointer;
+}
