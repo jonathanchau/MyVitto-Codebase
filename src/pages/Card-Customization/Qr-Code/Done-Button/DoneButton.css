@@ -1,0 +1,12 @@
+.done-button {
+    position: absolute;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 1px solid blue;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 0%);
+    font-size: 30px;
+    border-radius: 10px;
+}
