@@ -1,0 +1,25 @@
+.bold-button-container {
+    padding-left: 7px;
+}
+
+.bold-button {
+    position: relative;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+    font-weight: bold;
+    background-color: white;
+    font-size: 14px;
+}
+
+.bold-button:hover {
+    background-color: rgb(232, 232, 232)
+}
