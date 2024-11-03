@@ -1,0 +1,30 @@
+.qr-generator-tab-container {
+    position: absolute;
+}
+
+.qr-generator-header {
+    position: relative;
+    color: white;
+    left: -50px;
+    height: 42.5px;
+    width: 422px;
+    background-color: rgb(197, 197, 197);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 27px;
+}
+
+.qr-generator-tab {
+    position: relative;
+    background-color: rgb(249, 249, 249);
+    border: 3px solid black;
+    left: -50px;
+    height: 467.5px;
+    width: 416.5px;
+}
+
+.qr-generator-tab__input-areas {
+    overflow: scroll;
+    background-color: white;
+    height: 400px;
+}
