@@ -1,0 +1,33 @@
+.textbox-button-container {
+  padding-top: 35px;
+}
+
+.textbox-symbol {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 76.5px;
+    position: absolute;
+    color: gray;
+  }
+  
+.textbox-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106.25px;
+  height: 106.25px;
+  left: 34px;
+  border-radius: 20px;
+  border: 3px solid rgb(0, 183, 255);
+  background-color: white;
+  cursor: pointer;
+}
+  
+.textbox-label {
+  position: relative;
+  font-size: 15px;
+  color: black;
+  width: 0px;
+  height: 0px;
+  left: 65px;
+}
