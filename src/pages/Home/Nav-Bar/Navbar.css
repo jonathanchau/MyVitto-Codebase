@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.show {
+	position: fixed;
+	z-index: 100;
+	transition: all 0.5s ease;
+	top: 0;
+}
+
+.hide {
+	position: fixed;
+	transition: all 0.5s ease;
+	top: -50%;
+	z-index: 100;
+}
+
+/* entirety of the topnav */
+.topnav {
+	overflow: visible;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+	transition: background-color 0.7s ease;
+	padding-bottom: 1.5%;
+	padding-top: 0.5%;
+	/* display: block; */
+}
+
+/* The Vitto Image */
+.topnav img {
+	background-color: transparent;
+	height: auto;
+	width: 90%;
+	/* aspect-ratio: 4 / 1; */
+	opacity: 1; /* Set initial opacity to 1 */
+	transition: none; /* Remove transition */
+}
+
+/* entirety of the topnav when scrolling down */
+.topnav-scrolled {
+	overflow: visible;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+	background-color: white;
+	transition: background-color 0.7s ease;
+	padding-top: 0.5%;
+	padding-bottom: 1.5%;
+	/* display: block; */
+}
+
+/* The Vitto Image when scrolling down */
+.topnav-scrolled img {
+	background-color: transparent;
+	height: auto;
+	width: 90%;
+	/* aspect-ratio: 4 / 1; */
+}
+
+/* menu icon does not need to appear for desktop */
+.menu-icon {
+	display: none;
+}
+
+/* menu icon does not need to appear for desktop */
+.menu-icon-active {
+	display: none;
+}
+
+/* Both nav-menu and nav-menu-active are the same since no menu icon */
+.nav-menu {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 1%;
+	padding-top: 1.5%;
+	padding-bottom: 1%;
+	overflow: visible;
+	position: fixed;
+	width: 80%;
+	margin-left: 20%;
+	height: auto;
+	z-index: 100;
+	background-color: none;
+	transition: background-color 0.7s ease;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-menu a {
+	color: black;
+	text-decoration: none;
+	font-size: 190%;
+	font-family: 'oswald', sans-serif;
+}
+
+.nav-menu-active {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 1%;
+	padding-top: 1.5%;
+	padding-bottom: 1%;
+	overflow: visible;
+	position: fixed;
+	width: 80%;
+	margin-left: 20%;
+	height: auto;
+	z-index: 100;
+	background-color: none;
+	transition: background-color 0.7s ease;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-menu-active a {
+	color: black;
+	text-decoration: none;
+	font-size: 190%;
+	font-family: 'oswald', sans-serif;
+}
+
+/* Stuff for the left side */
+.topnav-left {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+}
+
+/* padding and margin for attributes on the left side */
+.topnav-left a {
+	padding: 0.5% 2%;
+	margin-left: 10%;
+}
+
+/* Stuff for the right side */
+.topnav-right {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	width: 100%;
+}
+
+/* padding and margin for attributes on the right side */
+.topnav-right a {
+	margin-right: 10%;
+	white-space: nowrap;
+	padding: 0.5% 2%;
+}
+
+/* Sign up button */
+.topnav-right a:first-child {
+	color: white;
+	background-color: black;
+}
+
+/* Vitto logo */
+.topnav-left-logo {
+	display: inline-flex;
+	height: auto;
+	width: 20%;
+}
+
+
+/* For mobile displays */
+@media screen and (max-width: 768px) {
+	.topnav {
+		padding-top: 1%;
+		padding-bottom: 0.5%;
+		overflow: visible;
+		position: fixed;
+		width: 100%;
+		height: auto;
+		z-index: 100;
+		transition: all 0.3s ease;
+		background-color: white;
+	}
+
+	.topnav-scrolled {
+		padding-top: 1%;
+		padding-bottom: 0.5%;
+		overflow: visible;
+		position: fixed;
+		width: 100%;
+		height: auto;
+		z-index: 100;
+		transition: all 0.3s ease;
+		/* display: block; */
+		background-color: white;
+	}
+
+	.topnav img {
+		background-color: transparent;
+		height: 100%;
+		width: 100%;
+		aspect-ratio: 4 / 1;
+	}
+
+	.menu-icon {
+		display: block;
+		width: 8%;
+		height: 50px;
+		aspect-ratio: 1 / 1;
+		position: absolute;
+		border-radius: 50%;
+		left: 90%;
+		top: 10%;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	/* .menu-icon:hover {
+		background-color: rgb(219, 219, 219);
+		opacity: 0.5;
+	} */
+
+	.menu-icon-active {
+		display: block;
+		width: 8%;
+		height: 50px;
+		aspect-ratio: 1 / 1;
+		position: absolute;
+		border-radius: 50%;
+		left: 90%;
+		top: 10%;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+
+	/* .menu-icon-active:hover {
+		background-color: rgb(219, 219, 219);
+		opacity: 0.5;
+	} */
+
+	.topLine,
+	.middleLine,
+	.bottomLine {
+		position: absolute;
+		left: 25%;
+		top: 20%;
+		height: 8%;
+		width: 50%;
+		background-color: black;
+		transform: rotate(0deg);
+		transition: all 0.4s;
+	}
+
+	.middleLine {
+		top: 40%;
+	}
+
+	.bottomLine {
+		top: 60%;
+	}
+
+	.topLineSpin,
+	.middleLineSpin,
+	.bottomLineSpin {
+		position: absolute;
+		left: 25%;
+		top: 45%;
+		height: 8%;
+		width: 50%;
+		background-color: black;
+		transform: rotate(135deg);
+		transition: all 0.4s;
+	}
+
+	.middleLineSpin {
+		transform: rotate(135deg);
+	}
+
+	.bottomLineSpin {
+		transform: rotate(225deg);
+	}
+
+	.nav-menu {
+		width: 100%;
+		z-index: 99;
+		overflow: hidden;
+		max-height: 0;
+		position: fixed;
+		display: block;
+		transform: translateY(20%) translateX(-20%);
+		transition: all 0.3s ease;
+	}
+
+	.nav-menu-active {
+		width: 100%;
+		z-index: 99;
+		position: fixed;
+		transform: translateY(15%) translateX(-20%);
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		max-height: 300px;
+		overflow: hidden;
+		transition: all 0.3s ease;
+		background-color: white;
+	}
+
+	.topnav-left {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.topnav-left a {
+		/* border-color: black;
+		border-radius: 0%; */
+		padding: 0.5% 2%;
+		width: 100%;
+		margin-bottom: 1%;
+		margin-left: 0%;
+	}
+
+	.topnav-right {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+
+	.topnav-right a {
+		/* border-color: black;
+		border-radius: 0%; */
+		width: 100%;
+		white-space: nowrap;
+		padding: 0.5% 2%;
+		margin-bottom: 1%;
+	}
+
+	.topnav-right a:first-child {
+		background-color: transparent;
+		color: black;
+		border-bottom: 0px;
+	}
+
+	.topnav-left-logo {
+		display: flex;
+		height: 100%;
+		width: 20%;
+		padding-bottom: 1%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.menu-icon {
+		display: block;
+		width: 8%;
+		height: 40px;
+		aspect-ratio: 1 / 1;
+		position: absolute;
+		border-radius: 50%;
+		left: 90%;
+		top: 8%;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.menu-icon-active {
+		display: block;
+		width: 8%;
+		height: 40px;
+		aspect-ratio: 1 / 1;
+		position: absolute;
+		border-radius: 50%;
+		left: 90%;
+		top: 8%;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+
+	.nav-menu-active {
+		transform: translateY(14%) translateX(-20%);
+	}
+
+	.topLine,
+	.middleLine,
+	.bottomLine {
+		position: absolute;
+		left: 25%;
+		top: 20%;
+		height: 6%;
+		width: 60%;
+		background-color: black;
+		transform: rotate(0deg);
+		transition: all 0.4s;
+	}
+
+	.middleLine {
+		top: 40%;
+	}
+
+	.bottomLine {
+		top: 60%;
+	}
+}
