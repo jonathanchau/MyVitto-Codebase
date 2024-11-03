@@ -1,0 +1,12 @@
+.font-style-options-container {
+    position: relative;
+    top: -143px;
+    left: 0px;
+    width: 148px;
+    height: 120px;
+    border: 1px solid #000;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
