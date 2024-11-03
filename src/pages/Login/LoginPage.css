@@ -1,0 +1,275 @@
+/* General stuff */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* "<- BACK" */
+.backText {
+    font-size: 120%;
+    color: #000000;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.signUpText {
+    font-size: 120%;
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 1%;
+}
+
+.loginContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+/* Logo at the very top */
+.loginContainer img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 1%;
+    object-fit: contain; /* Adjust the object-fit property based on your logo's aspect ratio */
+    aspect-ratio: 4 / 1;
+}
+
+
+.loginContainer a{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+
+.login-top-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding: 1%;
+    width: 100%;
+}
+
+.login-top-nav a:first-child{
+    width: 5.2%;
+}
+
+.login-top-nav a:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+    width: 8%;
+}
+
+/* CSS for the name and email text */
+.nameemail {
+    position: relative;
+    right: 19%;
+}
+
+.status {
+    position: relative;
+    color: red;
+    /* background-color:rgb(240, 199, 214); */
+    border-radius: 2em;
+    font-size: 120%;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 2%;
+    bottom: 18.5%;
+    transition: all 0.3s ease-in;
+}
+
+/* CSS for the password text */
+.password {
+    position: relative;
+    right: 26%;
+}
+
+/* CSS for forgot password text */
+.forgotpassword {
+    position: relative;
+    right: 20%;
+    bottom: 13.5%;
+}
+
+.forgotpassword a {
+    text-decoration: none;
+    color: rgb(39, 132, 238);
+}
+
+/* CSS for remember me */
+.remember-me {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    right: 22%;
+    bottom: 23%;
+}
+
+/* CSS for the background of the login cover */
+.loginCover {
+    background-color: white;
+    width: 30em;
+    height: 45em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* margin to push everything down */
+.loginCover h1{
+    margin-top: 4%;
+}
+
+/* CSS for the input for password and text */
+.loginCover input[type="password"], input[type="text"]{
+    font-size: 100%;
+    width: 68%;
+    height: 7%;
+    border-radius: 12px;
+    border-color: rgb(60, 146, 245);
+    position: relative;
+    margin-bottom: 6%;
+    background-color: rgb(218, 216, 216);
+    padding: 3%;
+    margin-top: -5.2%;
+}
+
+/* CSS for the checkbox */
+.loginCover input[type="checkbox"]{
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border-color: rgb(60, 146, 245);
+    position: relative;
+    padding: 3%;
+    margin-top: -5.2%;
+}
+
+/* CSS for the login button */
+.login-button {
+    font-size: 1.4em;
+    border-style: hidden;
+    color: rgb(255, 255, 255);
+    width: 24%;
+    height: 6.5%;
+    background-color: rgb(60, 146, 245);
+    border-radius: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    left: 22%;
+    top: -6%;
+}
+
+/* grows in size when hovering over login-button */
+.login-button:hover {transform: scale(1.05);}
+
+/* CSS for the login with Google */
+.alt-login {
+    font-size: 140%;
+    color: rgb(255, 255, 255);
+    width: 68%;
+    height: 7%;
+    border-radius: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    bottom: 17.5%;
+    left: 15%;
+}
+
+/* CSS for the no account text */
+.alt-login-text {
+    position: relative;
+    color: black;
+    white-space: nowrap;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 120%;
+    bottom: 20%;
+}
+
+/* CSS for the register button */
+.register-button {
+    font-size: 140%;
+    color: rgb(255, 255, 255);
+    width: 68%;
+    height: 7%;
+    background-color: rgb(60, 146, 245);
+    border-radius: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    bottom: 12%;
+}
+
+/* CSS for the Sign-up here button */
+.register-button a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* grows in size when hovering over sign-up-here-button */
+.register-button:hover {transform: scale(1.05);}
+
+@media screen and (max-width: 480px) {
+    .backText{
+        font-size: 110%;
+    }
+
+    .loginCover{
+        width: 22em;
+        height: 33em;
+    }
+
+    .loginCover input[type="password"], input[type="text"] {
+        width: 78%;
+    }
+
+    .signUpText {
+        padding: 0%;
+    }
+
+    .forgotpassword {
+        bottom: 12.5%;
+    }
+
+    .login-button {
+        width: 26%;
+        left: 26%;
+        top: -5%;
+    }
+
+    .password {
+        right: 29.5%;
+    }
+}
