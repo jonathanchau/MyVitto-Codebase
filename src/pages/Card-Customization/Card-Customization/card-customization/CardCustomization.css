@@ -1,0 +1,60 @@
+.selected {
+  border: 2px dashed lightgray;
+}
+:root {
+  --width: 7;
+  --height: 4;
+  --buttonWidth: 100px;
+  --buttonHeight: 50px;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.buttons {
+  position: absolute;
+  top: 200px;
+}
+
+.card-wrapper {
+  display:flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: rgb(247, 252, 255);
+}
+
+.card {
+  background-color: white;
+  border: 2px solid black;
+  width: 358.4px;
+  height: 740px;
+  box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .card--size {
+    transform: scale(0.77);
+  }
+}
+
+.resolution-button{
+  display: flex;
+  background-color: red;
+  position: absolute;
+  align-items: stretch;
+  bottom: 1vh;
+  right: 1vw;
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
+}
+
+.background-image {
+  border-radius: 50px;
+}
