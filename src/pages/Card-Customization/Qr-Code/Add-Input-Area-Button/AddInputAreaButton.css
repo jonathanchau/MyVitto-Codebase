@@ -1,0 +1,28 @@
+.add-input-area-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.add-input-area-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    border: 2px solid gray;
+    width: 39px;
+    height: 39px;
+    border-radius: 100px;
+    font-size: 30px;
+}
+
+.input-area-display {
+    position: relative;
+    border: 2px dashed gray;
+    width: 335px;
+    height: 35px;
+    left: 10px;
+}
