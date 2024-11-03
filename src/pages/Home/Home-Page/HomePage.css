@@ -1,0 +1,507 @@
+/* For jelly fish and top left text */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Get Started Buton */
+.buttonStyle {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    height: 50px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: absolute;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20%;
+    top: 75%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* Animation Properties */
+    /* opacity: 0;
+    transform: translateX(-50%);
+    animation: buttonFadeIn 1.5s ease-out forwards; */
+}
+
+/* @keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+
+.buttonStyle:disabled {
+    cursor: default;
+}
+
+.buttonStyle:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+/* "Networking simplified..." text*/
+.topLeftText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* margin-right: 20%; */
+    /* Animation Properties */
+    /* opacity: 0;
+    transform: translateX(-50%);
+    animation: textFadeIn 1.5s ease-out forwards; */
+}
+
+/* @keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+
+/* JellyFish Image */
+.topJellyFish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    /* Animation properties */
+    /* opacity: 0;
+    transform: translateX(50%);
+    animation: jellyFishFadeIn 1.5s ease-out forwards; */
+}
+
+/* @keyframes jellyFishFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+
+/*jelly fish size*/
+.image1Style {
+    width: 61%;
+    height: 100%;
+    aspect-ratio: 5/5;
+    image-rendering: crisp-edges;
+
+}
+
+
+/*text size*/
+.textStyle {
+    width: 73%;
+    aspect-ratio: 1/1;
+    margin-right: 15%;
+    margin-top: 10%;
+    image-rendering: crisp-edges;
+
+}
+
+/*background splash positioning*/
+.image2Style {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 110%;
+    aspect-ratio: 1.4/2;
+    image-rendering: crisp-edges;
+    z-index: 1;
+}
+
+.textStyle2 {
+    width: 90%;
+    aspect-ratio: 4/3;
+    margin-left: 108%;
+    margin-top: -18%;
+    image-rendering: crisp-edges;
+    z-index: 2;
+    /* Animation properties */
+    /* opacity: 0;
+    transform: translateX(50%);
+    animation: text2FadeIn 1.5s ease-out forwards; */
+}
+
+/* @keyframes text2FadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+/* CSS for the "So how does Vitto Work" */
+.textStyleSection2 {
+    position: relative;
+    width: 75%;
+    left: 12.5%;
+    top: 10%;
+}
+
+/* section1 background color */
+.section1 {
+    background: linear-gradient(90deg, rgba(123, 205, 255, 1) 20%, rgba(106, 136, 255, 1) 64%);
+    height: 100vh;
+}
+
+/* section1 transition into section2's background color */
+.section1-transition {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 220% 220% 220% 220%;
+    z-index: 0;
+    background:
+        linear-gradient(to bottom, transparent 0%, rgb(252, 207, 165, 1) 80%),
+        linear-gradient(to right, rgba(123, 205, 255, 1) 20%, rgba(106, 136, 255, 1) 64%);
+    height: 50vh;
+    /* Adjust the overall height of the section  */
+}
+
+/* section2 background color */
+.section2 {
+    z-index: 0;
+    background:
+        linear-gradient(180deg, rgb(248, 207, 165) 0%, rgb(248, 207, 165) 100%);
+    background-position: top, bottom, left, right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Adjust the overall height of the section  */
+}
+
+/* section2 transition into section3's background color */
+.section2-transition {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 220% 220% 220% 220%;
+    z-index: 0;
+    background:
+        linear-gradient(to top, transparent 0%, rgb(252, 207, 165, 1) 80%),
+        rgba(197, 225, 255, 1);
+    background-position: top, bottom, left, right;
+    background-repeat: no-repeat;
+    height: 50vh;
+    /* Adjust the overall height of the section  */
+}
+
+/* section3 background color */
+.section3 {
+    background: rgba(197, 225, 255, 1);
+    height: 100vh;
+}
+
+/* Size of bubbles */
+.bubbleStyle {
+    position: relative;
+    width: 25%;
+    aspect-ratio: 2/2;
+    image-rendering: crisp-edges;
+    z-index: 0;
+}
+
+.bubbleContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 20%;
+}
+
+/* 1st bubble */
+.bubbleStyle:nth-child(1) {
+    margin-top: 0%;
+    margin-right: 0%;
+    z-index: 1;
+}
+
+/* 2nd bubble */
+.bubbleStyle:nth-child(2) {
+    margin-right: 0%;
+    z-index: 1;
+}
+
+/* 3rd bubble */
+.bubbleStyle:nth-child(3) {
+    margin-right: 0%;
+    z-index: 1;
+}
+
+/* 4th bubble */
+.bubbleStyle:last-child {
+    margin-right: 0%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 50% 20%;
+        justify-items: center;
+        position: relative;
+        top: 13%;
+    }
+
+    .splashImage {
+        display: none;
+    }
+
+    /* Get Started Buton */
+    .buttonStyle {
+        font-size: 160%;
+        height: 50px;
+        margin: 0;
+        padding: 0 5px;
+        width: 40%;
+        left: 50%;
+        top: 97%;
+    }
+
+    .buttonStyle:disabled {
+        cursor: default;
+    }
+
+    .buttonStyle:focus {
+        box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+    }
+
+    /* "Networking simplified..." text*/
+    .topLeftText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        width: 100%;
+        /* margin-right: 20%; */
+    }
+
+    /* JellyFish Image */
+    .topJellyFish {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+    }
+
+    .bottomRightText {
+        display: contents;
+        position: relative;
+    }
+
+    /*text size*/
+    .textStyle {
+        width: 50%;
+        margin-right: 0%;
+        margin-top: 0%;
+        aspect-ratio: 10/10;
+        image-rendering: crisp-edges;
+    }
+
+    /*jelly fish size*/
+    .image1Style {
+        width: 70%;
+        height: 100%;
+        aspect-ratio: 5/5;
+        image-rendering: crisp-edges;
+
+    }
+
+    /*background splash positioning*/
+    .image2Style {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 110%;
+        aspect-ratio: 1.4/2;
+        image-rendering: crisp-edges;
+        z-index: 1;
+    }
+
+    .textStyle2 {
+        width: 90%;
+        aspect-ratio: 4/3;
+        margin-left: 5%;
+        margin-top: -18%;
+        image-rendering: crisp-edges;
+        z-index: 1;
+    }
+
+    /* CSS for the "So how does Vitto Work" */
+    .textStyleSection2 {
+        top: 0%;
+    }
+
+    /* Size of bubbles */
+    .bubbleStyle {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2/2;
+        image-rendering: crisp-edges;
+        z-index: 0;
+    }
+
+    .bubbleContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        position: relative;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 50% 20%;
+        justify-items: center;
+        position: relative;
+        top: 8%;
+    }
+
+    
+    .splashImage {
+        display: none;
+    }
+
+    /* Get Started Buton */
+    .buttonStyle {
+        font-size: 160%;
+        height: 45px;
+        margin: 0;
+        padding: 0 5px;
+        width: 45%;
+        left: 50%;
+        top: 82%;
+        z-index: 3;
+    }
+
+    /* "Networking simplified..." text*/
+    .topLeftText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        width: 100%;
+        /* margin-right: 20%; */
+    }
+
+    /* JellyFish Image */
+    .topJellyFish {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+    }
+
+    .bottomRightText {
+        display: contents;
+        position: relative;
+    }
+
+    /*text size*/
+    .textStyle {
+        width: 60%;
+        margin-right: 0%;
+        margin-top: 0%;
+        aspect-ratio: 10/10;
+        image-rendering: crisp-edges;
+    }
+
+    /*jelly fish size*/
+    .image1Style {
+        width: 80%;
+        height: 100%;
+        aspect-ratio: 5/5;
+        image-rendering: crisp-edges;
+
+    }
+
+    /*background splash positioning*/
+    .image2Style {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 110%;
+        aspect-ratio: 1.4/2;
+        image-rendering: crisp-edges;
+        z-index: 1;
+    }
+
+    .textStyle2 {
+        width: 95%;
+        aspect-ratio: 4/3;
+        margin-left: 5%;
+        margin-top: -18%;
+        image-rendering: crisp-edges;
+        z-index: 1;
+    }
+
+    /* CSS for the "So how does Vitto Work" */
+    .textStyleSection2 {
+        top: 0%;
+        left: 11%;
+    }
+
+    /* Size of bubbles */
+    .bubbleStyle {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2/2;
+        image-rendering: crisp-edges;
+        z-index: 0;
+        margin-bottom: 50%;
+    }
+
+    .bubbleContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        position: relative;
+        top: 5%;
+    }
+}
