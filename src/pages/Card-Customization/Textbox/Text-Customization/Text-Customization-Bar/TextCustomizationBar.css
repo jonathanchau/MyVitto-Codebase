@@ -1,0 +1,24 @@
+
+.customization-bar {
+    display: flex;
+    position: absolute;
+    top: 159px;
+    transform: translate(13%, 0%);
+    border: 1px solid #000;
+    width: 350px;
+    height: 40px;
+    background-color: white;
+    z-index: 1;
+}
+
+
+.bottom-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid black;
+    top: 120px;
+    left: 40px;
+}
