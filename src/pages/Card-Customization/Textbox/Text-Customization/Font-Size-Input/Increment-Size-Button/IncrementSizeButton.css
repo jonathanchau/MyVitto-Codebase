@@ -1,0 +1,20 @@
+.increment-button {
+    position: relative;
+    left: -2px;
+    border: 1px solid #000;
+    background-color: white;
+    top: 5px;
+    height: 30px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.1s ease;
+}
+
+.increment-button:hover {
+    background: lightgray;
+}
