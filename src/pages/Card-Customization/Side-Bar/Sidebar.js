@@ -1,8 +1,8 @@
-import CreateTextboxButton from '../textbox/create-textbox-button/CreateTextboxButton.js';
-import CreateImageButton from '../image/create-image-button/CreateImageButton.js';
-import BackgroundButton from '../background/background-button/BackgroundButton.js';
+import CreateTextboxButton from '../Textbox/Create-Textbox-Button/CreateTextboxButton.js';
+import CreateImageButton from '../Image/Create-Image-Button/CreateImageButton.js';
+import BackgroundButton from '../Background/Background-Button/BackgroundButton.js';
 import React, {useState, useRef} from 'react';
-import QrButton from '../qr-code/qr-button/QrButton.js';
+import QrButton from '../Qr-Code/Qr-Button/QrButton.js';
 import './SideBar.css';
 
 const SideBar = ({backgroundRef, backgroundImageIsActive, setBackgroundImageIsActive, setSelectedBackgroundImage,

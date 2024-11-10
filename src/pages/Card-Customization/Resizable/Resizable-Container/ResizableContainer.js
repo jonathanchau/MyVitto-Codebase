@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-import ResizingVertex from '../resizing-vertex/ResizingVertex';
+import ResizingVertex from '../Resizing-Vertex/ResizingVertex';
 
 const ResizableContainer = ({type, DraggableWrapper, WrappedComponent, id, handleKeyDownDeleteItem, imageFile,
                             setTextboxRef, textboxBorderRef, setTextboxBorderRef, displayCustomizationBar, setDisplayCustomizationBar,

@@ -1,4 +1,5 @@
 import './BackgroundButton.css';
+import backgroundImageSymbol from "../../../../assets/Card-Customization/backgroundImageSymbol.png"
 
 const BackgroundButton = ({backgroundRef, backgroundImageIsActive, setBackgroundImageIsActive, setSelectedBackgroundImage}) => {
 
@@ -36,7 +37,7 @@ const BackgroundButton = ({backgroundRef, backgroundImageIsActive, setBackground
                   <div className="background-symbol-container">
                     <img 
                       className="background-symbol"
-                      src="backgroundImageSymbol.png" 
+                      src={backgroundImageSymbol}
                     />
                   </div>
                   <input

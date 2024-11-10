@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from "react";
-import ResizingVertex from "../resizing-vertex/ResizingVertex";
-import DraggableContainer from "../../draggable/DraggableContainer";
+import ResizingVertex from "../Resizing-Vertex/ResizingVertex";
+import DraggableContainer from "../../Draggable/DraggableContainer";
 import QRCode from "react-qr-code";
 
 const ResizableQrContainer = ({setTextboxRef, setTextboxBorderRef, setDisplayCustomizationBar}) => {

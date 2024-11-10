@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './QrGenerator.css';
-import InputArea from '../input-area/InputArea';
-import AddInputAreaButton from '../add-input-area-button/AddInputAreaButton';
-import DoneButton from '../done-button/DoneButton';
+import InputArea from '../Input-Area/InputArea';
+import AddInputAreaButton from '../Add-Input-Area-Button/AddInputAreaButton';
+import DoneButton from '../Done-Button/DoneButton';
 
 const QrGenerator = ({QrTabRef, setQrCodeIsOnScreen}) => {
 

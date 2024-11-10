@@ -2,6 +2,7 @@ import {v4 as uuidv4} from 'uuid';
 import {useRef} from 'react';
 import './CreateImageButton.css';
 import imageCompression from 'browser-image-compression';
+import imageSelectionSymbol from '../../../../assets/Card-Customization/imageSelectionSymbol.png'
 
 const CreateImageButton = ({setCardItemsArray}) => {
 
@@ -42,7 +43,7 @@ const imageInputRef = useRef(null);
               <div className="image-symbol-container">
                 <img 
                   className="image-symbol"
-                  src="imageSelectionSymbol.png"
+                  src={imageSelectionSymbol}
                 />
               </div>
                 <input
