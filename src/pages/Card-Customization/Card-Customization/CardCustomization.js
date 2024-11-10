@@ -12,7 +12,7 @@ import Background from '../../components/background/background/Background.js';
 import TextCustomizationBar from '../../components/textbox/text-customization/text-customization-bar/TextCustomizationBar.js';
 import ResizableQrContainer from '../../components/resizable/resizable-container/ResizeableQrContainer.js';
 
-export default function CreateBlankCard() {
+export default function CardCustomization() {
   const cardRef = useRef();
   const backgroundRef = useRef(null);
   const [cardItemsArray, setCardItemsArray] = useState([]);

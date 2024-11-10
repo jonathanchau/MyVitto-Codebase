@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Textbox.css';
 
-const TextFieldElement = React.forwardRef(({borderRef, topPositionCoordinate, leftPositionCoordinate, setTopPositionCoordinate, setLeftPositionCoordinate, 
+const Textbox = React.forwardRef(({borderRef, topPositionCoordinate, leftPositionCoordinate, setTopPositionCoordinate, setLeftPositionCoordinate, 
                                             setBottomPositionCoordinate, setRightPositionCoordinate}, textboxRef) => {
 
     const [textboxInput, setTextboxInput] = useState('');
@@ -51,4 +51,4 @@ const TextFieldElement = React.forwardRef(({borderRef, topPositionCoordinate, le
     );
 })
  
-export default TextFieldElement;
+export default Textbox;
