@@ -1,4 +1,4 @@
-import OneFontStyleOption from "./OneFontStyleOption/OneFontStyleOption";
+import OneFontStyleOption from "../One-Font-Style-Option/OneFontStyleOption";
 import './FontStyleOptions.css';
 import {useState, useEffect} from "react";
 
