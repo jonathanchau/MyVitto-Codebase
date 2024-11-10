@@ -1,8 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react';
 import ResizingVertex from '../resizing-vertex/ResizingVertex';
 
-
-const ResizeableContainer = ({type, DraggableWrapper, WrappedComponent, id, handleKeyDownDeleteItem, imageFile,
+const ResizableContainer = ({type, DraggableWrapper, WrappedComponent, id, handleKeyDownDeleteItem, imageFile,
                             setTextboxRef, textboxBorderRef, setTextboxBorderRef, displayCustomizationBar, setDisplayCustomizationBar,
                             isHoveringOverCustomizationBar, resizingVertices, setResizingVertices, setIsHoveringOverResizableContainer}) => {
     //initilaization of reference to the wrapped component
@@ -513,4 +512,4 @@ const ResizeableContainer = ({type, DraggableWrapper, WrappedComponent, id, hand
     );
 }
  
-export default ResizeableContainer;
+export default ResizableContainer;

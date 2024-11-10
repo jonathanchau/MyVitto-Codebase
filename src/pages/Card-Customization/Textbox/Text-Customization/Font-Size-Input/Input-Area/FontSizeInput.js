@@ -1,7 +1,7 @@
 import {useEffect} from 'react';
 import './FontSizeInput.css';
-import IncrementSizeButton from './IncrementSizeButton/IncrementSizeButton';
-import DecrementSizeButton from './DecrementSizeButton/DecrementSizeButton';
+import IncrementSizeButton from '../Increment-Size-Button/IncrementSizeButton';
+import DecrementSizeButton from '../Decrement-Size-Button/DecrementSizeButton';
 
 const FontSizeInput = ({fontSize, setFontSize, textboxRef}) => {
 

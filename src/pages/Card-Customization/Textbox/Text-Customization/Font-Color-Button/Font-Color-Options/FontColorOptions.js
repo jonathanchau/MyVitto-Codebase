@@ -1,4 +1,4 @@
-import OneFontColorOption from "./OneFontColorOption/OneFontColorOption";
+import OneFontColorOption from "../One-Font-Color-Option/OneFontColorOption";
 import './FontColorOptions.css';
 import {useEffect, useState} from "react";
 

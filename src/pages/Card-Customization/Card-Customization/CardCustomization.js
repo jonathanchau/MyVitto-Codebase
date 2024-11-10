@@ -1,16 +1,16 @@
 import React, {useState, useRef, useEffect} from 'react';
 import './CardCustomization.css';
 import '../../../App.css';
-import SideBar from '../Side-Bar/SideBar.js; //done
-import QrGenerator from '../Qr-Code/Qr-Generator/QrGenerator.js;  //done
-import DraggableBorderContainer from '../Draggable/DraggableBorderContainer.js';  //done
-import Textbox from '../Textbox/Textbox/Textbox.js';  //done
-import ResizableContainer from '../Resizable/Resizable-Container/ResizableContainer.js';  //done
-import DraggableContainer from '../Draggable/DraggableContainer.js'; //done
-import ImageElement from '../Image/Image-Element/ImageElement.js';  //done
-import Background from '../Background/Background/Background.js';  //done
-import TextCustomizationBar from '../../components/textbox/text-customization/text-customization-bar/TextCustomizationBar.js';
-import ResizableQrContainer from '../../components/resizable/resizable-container/ResizeableQrContainer.js';
+import SideBar from '../Side-Bar/SideBar.js'; 
+import QrGenerator from '../Qr-Code/Qr-Generator/QrGenerator.js';  
+import DraggableBorderContainer from '../Draggable/DraggableBorderContainer.js';  
+import Textbox from '../Textbox/Textbox/Textbox.js';  
+import ResizableContainer from '../Resizable/Resizable-Container/ResizableContainer.js';  
+import DraggableContainer from '../Draggable/DraggableContainer.js'; 
+import ImageElement from '../Image/Image-Element/ImageElement.js';  
+import Background from '../Background/Background/Background.js';
+import TextCustomizationBar from '../Textbox/Text-Customization/Text-Customization-Bar/TextCustomizationBar.js';
+import ResizableQrContainer from '../Resizable/Resizable-Container/ResizableQrContainer.js';
 
 export default function CardCustomization() {
   const cardRef = useRef();
@@ -119,7 +119,7 @@ export default function CardCustomization() {
 
             {cardItemsArray.map((item) => (
               item.file ? (
-                <ResizeableContainer
+                <ResizableContainer
                   type={"image"}
                   key={item.id}
                   id={item.id}
@@ -132,12 +132,12 @@ export default function CardCustomization() {
                   handleKeyDownDeleteItem={handleKeyDownDeleteItem}
                 />
               ) : (
-                <ResizeableContainer
+                <ResizableContainer
                   type={"textbox"}
                   key={item.id}
                   id={item.id}
                   DraggableWrapper={DraggableBorderContainer}
-                  WrappedComponent={TextFieldElement}
+                  WrappedComponent={Textbox}
                   setTextboxRef={setTextboxRef}
                   textboxBorderRef={textboxBorderRef}
                   setTextboxBorderRef={setTextboxBorderRef}

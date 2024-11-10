@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import './FontColorButton.css';
-import FontColorOptions from './FontColorOptions/FontColorOptions';
+import FontColorOptions from '../Font-Color-Options/FontColorOptions';
 
 const FontColorButton = ({textboxRef, colorOptionsAreDisplayed, setColorOptionsAreDisplayed}) => {
 
