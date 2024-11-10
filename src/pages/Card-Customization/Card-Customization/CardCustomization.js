@@ -1,14 +1,14 @@
 import React, {useState, useRef, useEffect} from 'react';
 import './CardCustomization.css';
-import '../../app/card-editor/App.css';
-import SideBar from '../../components/sidebar/Sidebar.js';
-import QrGenerator from '../../components/qr-code/qr-generator/QrGenerator.js';
-import DraggableBorderContainer from '../../components/draggable/DraggableBorderContainer.js';
-import TextFieldElement from '../../components/textbox/textbox/Textbox.js';
-import ResizeableContainer from '../../components/resizable/resizable-container/ResizeableContainer.js';
-import DraggableContainer from '../../components/draggable/DraggableContainer.js';
-import ImageElement from '../../components/image/image-element/ImageElement.js';
-import Background from '../../components/background/background/Background.js';
+import '../../../App.css';
+import SideBar from '../Side-Bar/SideBar.js; //done
+import QrGenerator from '../Qr-Code/Qr-Generator/QrGenerator.js;  //done
+import DraggableBorderContainer from '../Draggable/DraggableBorderContainer.js';  //done
+import Textbox from '../Textbox/Textbox/Textbox.js';  //done
+import ResizableContainer from '../Resizable/Resizable-Container/ResizableContainer.js';  //done
+import DraggableContainer from '../Draggable/DraggableContainer.js'; //done
+import ImageElement from '../Image/Image-Element/ImageElement.js';  //done
+import Background from '../Background/Background/Background.js';  //done
 import TextCustomizationBar from '../../components/textbox/text-customization/text-customization-bar/TextCustomizationBar.js';
 import ResizableQrContainer from '../../components/resizable/resizable-container/ResizeableQrContainer.js';
 
