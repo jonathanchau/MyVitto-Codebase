@@ -5,8 +5,8 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import { useState, useEffect } from "react";
 import Axios from "axios";
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../../services/AuthContext';
-import Vitto_Logo from "../../images/Vitto_Logo.png"
+import { useAuth } from '../../services/AuthContext.js';
+import Vitto_Logo from "../../assets/Home-Pages/Vitto_Logo.png"
 
 const LoginPage = () => {
     // const [user, setUser] = useState(""); // used to pass username info to the dashboard

@@ -1,6 +1,6 @@
 import './Navbar.css';
 import React, { useState, useEffect } from 'react';
-import Vitto_Logo_Final from "../../images/Vitto_Logo_Final.png"
+import Vitto_Logo_Final from "../../../assets/Home-Pages/Vitto_Logo_Final.png"
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

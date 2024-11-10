@@ -9,14 +9,14 @@ const jwt = require('jwt-simple'); /*npm install jwt-simple*/
 const passport = require('passport'); /* npm install passport */
 const rateLimiter = require('express-rate-limit'); /*npm install express-rate-limit*/
 
-const db = require("./config/db.js");
-const Login = require("./routes/Login.js");
-const Logout = require("./routes/Logout.js");
-const Registration = require("./routes/Registration.js");
-const Dashboard = require("./routes/Dashboard.js");
-const ForgotPassword = require("./routes/ForgotPassword.js");
-const ResetPassword = require("./routes/ResetPassword.js");
-const AccountChange = require("./routes/AccountChange.js")
+const db = require("./src/config/db.js");
+const Login = require("./src/routes/Login.js");
+const Logout = require("./src/routes/Logout.js");
+const Registration = require("./src/routes/Registration.js");
+const Dashboard = require("./src/routes/Dashboard.js");
+const ForgotPassword = require("./src/routes/ForgotPassword.js");
+const ResetPassword = require("./src/routes/ResetPassword.js");
+const UserInformation = require("./src/routes/UserInformation.js")
 
 const app = express();
 
@@ -77,7 +77,7 @@ app.use("/", Login);
 app.use("/", Logout);
 app.use("/", Registration);
 app.use("/", Dashboard);
-app.use("/", AccountChange);
+app.use("/", UserInformation);
 app.use("/", ForgotPassword);
 app.use("/", ResetPassword);
 

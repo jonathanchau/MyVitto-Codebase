@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Outlet } from 'react-router-dom';
 import './Dashboard.css';
 import Axios from "axios";
-import Profile from "../../components/profile/Profile.js";
+import Profile from "../Profile/Profile.js";
 
 function Dashboard() {
   const [profileColor, setProfileColor] = useState("#4285f4"); // Default color or any other fallback color

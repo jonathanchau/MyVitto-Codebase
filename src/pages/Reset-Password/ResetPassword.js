@@ -2,7 +2,7 @@ import './ResetPassword.css';
 import { useState, useEffect, useRef } from "react";
 import Axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Vitto_Logo from "../../images/Vitto_Logo.png"
+import Vitto_Logo from "../../assets/Home-Pages/Vitto_Logo.png"
 
 function ResetPassword() {
     const [newPassword, setNewPassword] = useState("");

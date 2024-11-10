@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAuth } from '../../services/AuthContext.js';
+import { useAuth } from '../../../services/AuthContext.js'
 import "./Profile.css";
 
 function Profile(props) {

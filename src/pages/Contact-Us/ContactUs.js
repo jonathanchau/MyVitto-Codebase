@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactUs.css';
-import Navbar from "../../components/nav-bar/Navbar.js";
+import Navbar from "../Home/Nav-Bar/Navbar.js";
 
 function ContactUs() {
     return (

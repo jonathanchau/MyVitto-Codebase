@@ -1,15 +1,15 @@
 import React from 'react';
 import './HomePage.css';
-import Navbar from "../../components/nav-bar/Navbar.js";
-import Text from "../../images/Text.png"
-import JellyFishImagePage1 from "../../images/JellyFishImagePage1.png"
-import Vittotext2 from "../../images/Vittotext2.png"
-import VittoSplashBackground2 from "../../images/VittoSplashBackground2.png"
-import SoHowDoesVittoWork from "../../images/SoHowDoesVittoWork.png"
-import Bubble1 from "../../images/Bubble1.png"
-import Bubble2 from "../../images/Bubble2.png"
-import Bubble3 from "../../images/Bubble3.png"
-import Bubble4 from "../../images/Bubble4.png"
+import Navbar from "../Nav-Bar/Navbar.js";
+import Text from "../../../assets/Home-Pages/Text.png";
+import JellyFishImagePage1 from "../../../assets/Home-Pages/JellyFishImagePage1.png";
+import Vittotext2 from "../../../assets/Home-Pages/Vittotext2.png";
+import VittoSplashBackground2 from "../../../assets/Home-Pages/VittoSplashBackground2.png";
+import SoHowDoesVittoWork from "../../../assets/Home-Pages/SoHowDoesVittoWork.png";
+import Bubble1 from "../../../assets/Home-Pages/Bubble1.png";
+import Bubble2 from "../../../assets/Home-Pages/Bubble2.png";
+import Bubble3 from "../../../assets/Home-Pages/Bubble3.png";
+import Bubble4 from "../../../assets/Home-Pages/Bubble4.png";
 
 // import img1 from './images/JellyFishImagePage1.png'
 
