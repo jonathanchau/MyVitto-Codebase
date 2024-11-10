@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './TextCustomizationBar.css';
-import BoldButton from '../bold-button/BoldButton';
-import ItalicizeButton from '../italicize-button/ItalicizeButton';
-import FontColorButton from '../font-color-button/FontColorButton';
-import FontStyleButton from '../font-style-button/FontStyleButton';
-import FontSizeInput from '../font-size-input/FontSizeInput';
+import BoldButton from '../Bold-Button/BoldButton';
+import ItalicizeButton from '../Italicize-Button/ItalicizeButton';
+import FontColorButton from '../Font-Color-Button/Button/FontColorButton';
+import FontStyleButton from '../Font-Style-Button/Button/FontStyleButton';
+import FontSizeInput from '../Font-Size-Input/Input-Area/FontSizeInput';
 
 const TextCustomizationBar = ({textboxRef, isHoveringOverCustomizationBar, setIsHoveringOverCustomizationBar, setDisplayCustomizationBar, isHoveringOverTextbox, 
                                 fontSize, setFontSize}) => {

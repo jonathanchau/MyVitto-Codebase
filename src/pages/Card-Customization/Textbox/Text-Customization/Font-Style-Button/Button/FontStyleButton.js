@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import FontStyleOptions from "./FontStyleOptions/FontStyleOptions";
+import FontStyleOptions from "../Font-Style-Options/FontStyleOptions";
 import './FontStyleButton.css';
 
 const FontStyleButton = ({styleOptionsAreDisplayed, setStyleOptionsAreDisplayed, textboxRef}) => {
