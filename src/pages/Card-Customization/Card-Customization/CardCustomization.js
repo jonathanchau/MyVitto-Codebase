@@ -12,6 +12,8 @@ import Background from '../Background/Background/Background.js';
 import TextCustomizationBar from '../Textbox/Text-Customization/Text-Customization-Bar/TextCustomizationBar.js';
 import ResizableQrContainer from '../Resizable/Resizable-Container/ResizableQrContainer.js';
 
+//branch for qr-code-backend
+
 export default function CardCustomization() {
   const cardRef = useRef();
   const backgroundRef = useRef(null);
