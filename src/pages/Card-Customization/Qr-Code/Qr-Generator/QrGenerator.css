@@ -1,8 +1,14 @@
-.qr-generator-tab-container {
+.qr-generator {
     position: absolute;
 }
 
-.qr-generator-header {
+@media (max-width: 760px) {
+    .qr-generator--size {
+        transform: scale(0.77);
+    }
+}
+
+.qr-generator__header {
     position: relative;
     color: white;
     left: -50px;
@@ -14,7 +20,7 @@
     font-size: 27px;
 }
 
-.qr-generator-tab {
+.qr-generator__tab {
     position: relative;
     background-color: rgb(249, 249, 249);
     border: 3px solid black;
@@ -23,7 +29,13 @@
     width: 416.5px;
 }
 
-.qr-generator-tab__input-areas {
+@media (max-width: 760px) {
+    .qr-generator--position {
+        left: -200px;
+    }
+}
+
+.qr-generator__tab__input-areas {
     overflow: scroll;
     background-color: white;
     height: 400px;

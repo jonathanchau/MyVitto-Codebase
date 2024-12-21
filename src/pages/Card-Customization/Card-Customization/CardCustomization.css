@@ -19,14 +19,11 @@ html {
 
 .card-wrapper {
   display:flex;
-  background-color: white;
   justify-content: center;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 50px;
-  background-color: rgb(247, 252, 255);
 }
-
 .card {
   background-color: white;
   border: 2px solid black;
