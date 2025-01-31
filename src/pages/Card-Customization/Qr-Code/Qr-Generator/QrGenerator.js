@@ -24,16 +24,16 @@ const QrGenerator = ({QrTabRef, setQrCodeIsOnScreen}) => {
 
     return ( 
         <div 
-            className='qr-generator-tab-container'
+            className="qr-generator qr-generator--size"
             ref={QrTabRef}
             style={{
                 left: leftSideCoordinate
             }}>
-            <div className='qr-generator-header'>
+            <div className="qr-generator__header qr-generator--position">
                 QR Generator
             </div>
-            <div className="qr-generator-tab">
-                <div className="qr-generator-tab__input-areas">
+            <div className="qr-generator__tab qr-generator--position">
+                <div className="qr-generator__tab__input-areas">
                     <InputArea/>
                     <InputArea/>
                     <InputArea/>

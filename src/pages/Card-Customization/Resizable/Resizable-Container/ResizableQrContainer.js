@@ -10,8 +10,6 @@ const ResizableQrContainer = ({setTextboxRef, setTextboxBorderRef, setDisplayCus
     //initialization of reference to the border of the component
     const borderRef = useRef(null); 
 
-    const borderAppearanceRef = useRef(null);
-
     //initialization of references to each of the 4 resizing vertices that appear on the border; references will allow direct access to the properties of each resizing vertex
     const topLeftCorner = useRef(null);
     const topRightCorner = useRef(null);
@@ -87,8 +85,9 @@ const ResizableQrContainer = ({setTextboxRef, setTextboxBorderRef, setDisplayCus
             qrCodeItem.style.width = `${measure}px`;
             qrCodeItem.style.height = `${measure}px`;
 
-            borderRef.current.style.width = `${measure + 5}px`;
-            borderRef.current.style.height = `${measure + 5}px`;
+            borderRef.current.style.width = `${measure + 20}px`;
+            borderRef.current.style.height = `${measure + 20}px`;
+            console.log(qrCodeItem.style.width, borderRef.current.style.width);
         }
 
         const handleMouseDown = (event, mouseMoveFunction) => {
@@ -143,14 +142,20 @@ const ResizableQrContainer = ({setTextboxRef, setTextboxBorderRef, setDisplayCus
 
     const QrCodeContainer = () => {
         return (
-            <QRCode
+            <div 
                 ref={qrCodeRef}
-                value="https://www.google.com"
                 style={{
-                    width: "100%",
-                    height: "100%",
+                    // border: "3px solid blue"
                 }}
-            />
+            >
+                <QRCode
+                    value="https://www.google.com"
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                    }}
+                />
+            </div>
         )
     }
 

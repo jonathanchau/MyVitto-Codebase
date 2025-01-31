@@ -21,7 +21,7 @@ const imageInputRef = useRef(null);
     const options = {
       maxSizeMB: 0.01,
       useWebWorker: true
-  }
+    }
 
   const compressedImage = await imageCompression(imageFile, options);
 
