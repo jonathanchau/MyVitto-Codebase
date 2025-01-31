@@ -11,6 +11,7 @@ const AuthProvider = ({ children }) => {
   const [emailRequirement, setEmailRequirement] = useState("");
   const [passwordRequirement, setpasswordRequirement] = useState("");
   const [confirmPasswordRequirement, setConfirmPasswordRequirement] = useState("");
+  const [saveToGoogleWalletLink, setSaveToGoogleWalletLink] = useState("");
 
   Axios.defaults.withCredentials = true;
 
@@ -83,10 +84,31 @@ const AuthProvider = ({ children }) => {
     }
   };
 
+  // generate a google pass for the user
+  const generateGoogleCard = async () => {
+    const user = await getUserDetails();
+
+    const response = await Axios.post("http://localhost:3001/generategooglecard", {
+      // NOTE: Put more fields like user's email here later
+        email: user.data.email,
+        username: user.data.username
+    })
+
+    setSaveToGoogleWalletLink(response.data);
+    console.log(response);
+  }
+
+  // get user information from session
+  const getUserDetails = async () => {
+    const response = await Axios.get("http://localhost:3001/sessionData")
+    return response;
+  }
+
   return (
     <AuthContext.Provider value={{
-      authenticated, user, loginStatus, usernameRequirement, emailRequirement, passwordRequirement, confirmPasswordRequirement,
-      login, logout, rememberLogin, register, googleAuthentication
+      authenticated, user, loginStatus, usernameRequirement, emailRequirement, passwordRequirement, confirmPasswordRequirement, 
+      saveToGoogleWalletLink, 
+      login, logout, rememberLogin, register, googleAuthentication, generateGoogleCard
     }}>
       {children}
     </AuthContext.Provider>

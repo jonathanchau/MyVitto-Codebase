@@ -1,6 +1,7 @@
 import CreateTextboxButton from '../Textbox/Create-Textbox-Button/CreateTextboxButton.js';
 import CreateImageButton from '../Image/Create-Image-Button/CreateImageButton.js';
 import BackgroundButton from '../Background/Background-Button/BackgroundButton.js';
+import GoogleWalletButton from '../../Dashboard/GoogleWalletButton/GoogleWalletButton.js'
 import React, {useState, useRef} from 'react';
 import QrButton from '../Qr-Code/Qr-Button/QrButton.js';
 import './SideBar.css';
@@ -28,6 +29,7 @@ const SideBar = ({backgroundRef, backgroundImageIsActive, setBackgroundImageIsAc
             useRef={sideBarRef}
         >
             <div className = "buttons">
+                
                 <BackgroundButton 
                     backgroundRef={backgroundRef}
                     backgroundImageIsActive={backgroundImageIsActive}
@@ -44,6 +46,7 @@ const SideBar = ({backgroundRef, backgroundImageIsActive, setBackgroundImageIsAc
                     setQrGeneratorIsDisplayed={setQrGeneratorIsDisplayed}
                     qrGeneratorIsDisplayed={qrGeneratorIsDisplayed}
                 />
+                <GoogleWalletButton />
             </div>
         </div>
         <div 

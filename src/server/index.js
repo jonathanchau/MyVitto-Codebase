@@ -5,9 +5,10 @@ const cookieParser = require("cookie-parser"); /* npm install cookie-parser */
 const session = require("express-session"); /* npm install express-session */
 const MySQLStore = require('express-mysql-session')(session);
 const crypto = require('crypto');
-const jwt = require('jwt-simple'); /*npm install jwt-simple*/
+// const jwt = require('jwt-simple'); /*npm install jwt-simple*/
 const passport = require('passport'); /* npm install passport */
 const rateLimiter = require('express-rate-limit'); /*npm install express-rate-limit*/
+require('dotenv').config();
 
 const db = require("./src/config/db.js");
 const Login = require("./src/routes/Login.js");
@@ -16,7 +17,9 @@ const Registration = require("./src/routes/Registration.js");
 const Dashboard = require("./src/routes/Dashboard.js");
 const ForgotPassword = require("./src/routes/ForgotPassword.js");
 const ResetPassword = require("./src/routes/ResetPassword.js");
-const UserInformation = require("./src/routes/UserInformation.js")
+const UserInformation = require("./src/routes/UserInformation.js");
+const GenerateGoogleCard = require("./src/routes/GenerateGoogleCard.js");
+const SessionData = require("./src/routes/SessionData.js");
 
 const app = express();
 
@@ -80,6 +83,8 @@ app.use("/", Dashboard);
 app.use("/", UserInformation);
 app.use("/", ForgotPassword);
 app.use("/", ResetPassword);
+app.use("/", GenerateGoogleCard);
+app.use("/", SessionData);
 
 app.listen(3001, () => {
     console.log("Running Server");

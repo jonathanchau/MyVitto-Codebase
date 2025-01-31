@@ -10,6 +10,7 @@
     "axios": "^1.7.4",
     "browser-image-compression": "^2.0.2",
     "cors": "^2.8.5",
+    "html2canvas": "^1.4.1",
     "mysql2": "^3.9.8",
     "nth-check": "^2.0.1",
     "postcss": "^8.4.31",

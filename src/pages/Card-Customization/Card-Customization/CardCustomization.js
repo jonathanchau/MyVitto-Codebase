@@ -1,13 +1,14 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import html2canvas from "html2canvas";
 import './CardCustomization.css';
 import '../../../App.css';
-import SideBar from '../Side-Bar/SideBar.js'; 
-import QrGenerator from '../Qr-Code/Qr-Generator/QrGenerator.js';  
-import DraggableBorderContainer from '../Draggable/DraggableBorderContainer.js';  
-import Textbox from '../Textbox/Textbox/Textbox.js';  
-import ResizableContainer from '../Resizable/Resizable-Container/ResizableContainer.js';  
-import DraggableContainer from '../Draggable/DraggableContainer.js'; 
-import ImageElement from '../Image/Image-Element/ImageElement.js';  
+import SideBar from '../Side-Bar/SideBar.js';
+import QrGenerator from '../Qr-Code/Qr-Generator/QrGenerator.js';
+import DraggableBorderContainer from '../Draggable/DraggableBorderContainer.js';
+import Textbox from '../Textbox/Textbox/Textbox.js';
+import ResizableContainer from '../Resizable/Resizable-Container/ResizableContainer.js';
+import DraggableContainer from '../Draggable/DraggableContainer.js';
+import ImageElement from '../Image/Image-Element/ImageElement.js';
 import Background from '../Background/Background/Background.js';
 import TextCustomizationBar from '../Textbox/Text-Customization/Text-Customization-Bar/TextCustomizationBar.js';
 import ResizableQrContainer from '../Resizable/Resizable-Container/ResizableQrContainer.js';
@@ -26,16 +27,19 @@ export default function CardCustomization() {
   const [isHoveringOverTextbox, setIsHoveringOverTextbox] = useState(null);
   const [fontSize, setFontSize] = useState(null);
   const [qrCodeIsOnScreen, setQrCodeIsOnScreen] = useState(false);
-  const [resizingVertices, setResizingVertices] = useState({topLeft: null, topMiddle: null, topRight: null,
-                                                            rightMiddle: null, rightBottom: null, bottomMiddle: null,
-                                                            bottomLeft: null, leftMiddle: null});
+  const [resizingVertices, setResizingVertices] = useState({
+    topLeft: null, topMiddle: null, topRight: null,
+    rightMiddle: null, rightBottom: null, bottomMiddle: null,
+    bottomLeft: null, leftMiddle: null
+  });
+  const [imageURL, setImageURL] = useState('');
 
   useEffect(() => {
-    if ((resizingVertices.topLeft && resizingVertices.topLeft.current) && (resizingVertices.topMiddle && resizingVertices.topMiddle.current) && 
-      (resizingVertices.topRight && resizingVertices.topRight.current) && (resizingVertices.rightMiddle && resizingVertices.rightMiddle.current) && 
-      (resizingVertices.rightBottom && resizingVertices.rightBottom.current) && (resizingVertices.bottomMiddle && resizingVertices.bottomMiddle.current) && 
+    if ((resizingVertices.topLeft && resizingVertices.topLeft.current) && (resizingVertices.topMiddle && resizingVertices.topMiddle.current) &&
+      (resizingVertices.topRight && resizingVertices.topRight.current) && (resizingVertices.rightMiddle && resizingVertices.rightMiddle.current) &&
+      (resizingVertices.rightBottom && resizingVertices.rightBottom.current) && (resizingVertices.bottomMiddle && resizingVertices.bottomMiddle.current) &&
       (resizingVertices.bottomLeft && resizingVertices.bottomLeft.current) && (resizingVertices.leftMiddle && resizingVertices.leftMiddle.current)) {
-      
+
       if (displayCustomizationBar) {
         resizingVertices.topLeft.current.style.opacity = "1";
         resizingVertices.topMiddle.current.style.opacity = "1";
@@ -83,11 +87,24 @@ export default function CardCustomization() {
 
   }, [])
 
-  return (
-    <div className = "customization">
-      <div className = "card-wrapper">
+  const handleCapture = () => {
+    const link = document.createElement("a");
+
+    html2canvas(cardRef.current).then((canvas) => {
+      link.download = "screenshot.png";
+      link.href = canvas.toDataURL("image/png");
+      // link.click();
+    });
+
+    // setImageURL(URL.createObjectURL(link.href));
+    // console.log(imageURL);
+  }
+
+    return (
+      <div className="customization">
+        <div className="card-wrapper">
           {qrGeneratorIsDisplayed && (
-            <QrGenerator 
+            <QrGenerator
               setQrGeneratorIsDisplayed={setQrGeneratorIsDisplayed}
               qrGeneratorIsDisplayed={qrGeneratorIsDisplayed}
               setQrCodeIsOnScreen={setQrCodeIsOnScreen}
@@ -106,7 +123,7 @@ export default function CardCustomization() {
             />
           }
 
-          <div 
+          <div
             className = "card card--size"
             ref={cardRef}
           >
@@ -168,8 +185,9 @@ export default function CardCustomization() {
             qrGeneratorIsDisplayed={qrGeneratorIsDisplayed}
             setCardItemsArray={setCardItemsArray}
           />
+        </div>
+        <button onClick={handleCapture}>Take Screenshot</button>
       </div>
-    </div>
-  );
-}
+    );
+  }
 

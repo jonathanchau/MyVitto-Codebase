@@ -24,12 +24,10 @@ router.post("/register", async (req, res) => {
     var invalidUserName = "";
     var invalidPassword = "";
     var duplicate = "";
-
-    if (checkForDuplicates(username)) {
+    if (!checkForDuplicates(username)) {
         validCredentials = false;
         duplicate = "*Duplicate email or username. Please choose another";
     }
-
     if (!isValidEmail(email)) {
         validCredentials = false;
         invalidEmail = "*Has to be a valid email"
@@ -53,7 +51,6 @@ router.post("/register", async (req, res) => {
                     "INSERT INTO users (user_id, username, password, email, profile_color) VALUES (?,?,?,?,?);",
                     [id, username, hash, email, randomColor]
                 )
-
                 req.session.user_id = id; // saves the result into session
                 res.status(200).json({ result: result, username: username, invalidEmail: invalidEmail, invalidUserName: invalidUserName, invalidPassword: invalidPassword });
             })

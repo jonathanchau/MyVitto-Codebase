@@ -1,4 +1,6 @@
-.App {
+/* NOTE: Adding App.css breaks homepages */
+
+/* .App {
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -7,4 +9,4 @@
 .textbox {
   min-width: 30px;
   min-height: 30px;
-}
+} */

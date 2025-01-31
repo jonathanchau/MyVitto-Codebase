@@ -26,8 +26,20 @@ CREATE TABLE IF NOT EXISTS `ResetTokens` (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   `used` int NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`user_id`) REFERENCES ResetTokens(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE IF NOT EXISTS `Card` (
+	`cid` VARCHAR(10),
+	`uid` int,
+    PRIMARY KEY (cid),
+    FOREIGN KEY(`uid`) REFERENCES Users(`id`)
+);
+
+CREATE TABLE IF NOT EXISTS `Element` (
+	`eid` VARCHAR (10)
+);
 
 -- CREATE TRIGGER generate_user_id -- generates a new random user id
 -- BEFORE INSERT ON users

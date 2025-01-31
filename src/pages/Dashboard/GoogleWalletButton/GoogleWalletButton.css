@@ -1,0 +1,17 @@
+.generateGoogleWalletCard {
+    font-size: 1.4em;
+    border-style: hidden;
+    color: rgb(255, 255, 255);
+    height: 6.5%;
+    padding: 0.5%;
+    background-color: rgb(60, 146, 245);
+    border-radius: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+}
